@@ -59,4 +59,4 @@ jobs:
           app-name: 'Patient-amh'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7AF4E6E9B1804BA99755E2892070D7B4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33265DBF252A46B3B83D752E9C33FF66 }}
