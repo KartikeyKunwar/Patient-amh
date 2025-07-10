@@ -41,9 +41,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    
     
     steps:
       - name: Download artifact from build job
@@ -61,4 +59,4 @@ jobs:
           app-name: 'Patient-amh'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_02F8631C164F48B3BE629E42F8C605D4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7AF4E6E9B1804BA99755E2892070D7B4 }}
